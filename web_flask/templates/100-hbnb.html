@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBNB Filters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/3-footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/3-header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/4-common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/6-filters.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="clearfix">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="HBNB logo">
+        </div>
+        <div class="title">
+            <h1>HBNB</h1>
+        </div>
+    </header>
+
+    <!-- Filters -->
+    <div class="container">
+        <section class="filters">
+            <h2>Filters</h2>
+            <div class="places">
+                <h3>States</h3>
+                <ul class="popover">
+                    {% for state in states %}
+                        <li>{{ state.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="cities">
+                <h3>Cities</h3>
+                <ul class="popover">
+                    {% for city in cities %}
+                        <li>{{ city.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <ul class="popover">
+                    {% for amenity in amenities %}
+                        <li>{{ amenity.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="clearfix">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/icon.png') }}" alt="HBNB icon">
+        </div>
+        <div class="text">
+            <p>© 2024 - Holberton School</p>
+        </div>
+    </footer>
+</body>
+</html>
+
