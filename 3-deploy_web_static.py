@@ -6,7 +6,7 @@ Distributes archive to webservers
 import os
 import datetime
 from fabric.api import put, run, env, local
-env.hosts = ['52.86.124.28', '54.196.40.166']
+env.hosts = ['100.26.138.58', '100.26.219.147']
 env.user = 'ubuntu'
 env.key_filename = '~/.ssh/id_rsa'
 
