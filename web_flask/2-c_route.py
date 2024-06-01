@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" scriipt that starts a webflask application"""
 from flask import Flask
 
 app = Flask(__name__)

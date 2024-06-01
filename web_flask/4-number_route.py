@@ -1,4 +1,5 @@
 #1/usr/bin/python3
+"""script that runs a flask app"""
 from flask import Flask
 
 app = Flask(__name__)

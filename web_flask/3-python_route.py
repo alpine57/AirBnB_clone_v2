@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" sript that runs flask application"""
 from flask import Flask
 
 app = Flask(__name__)
